@@ -1,9 +1,9 @@
 {
-    "name": "Delayed Tab",
+    "name": "Delay Tab",
     "version": "0.0.1",
     "manifest_version": 2,
-    "description": "A Mailbox App style 'read later' function for browser tabs. This extension was created with the awesome extensionizr.io",
-    "homepage_url": "http://extensionizr.com",
+    "description": "A Mailbox App inspired 'read later' function for browser tabs. This extension was created with the awesome extensionizr.io",
+    "homepage_url": "https://github.com/tombigel/delay-tab",
     "icons": {
         "16" : "icons/icon16.png",
         "48" : "icons/icon48.png",
