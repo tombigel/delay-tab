@@ -1,0 +1,33 @@
+<!doctype html>
+</html>
+    <head>
+        <link rel="stylesheet" href="../css/browser_action.css"/>
+    </head>
+
+    <body>
+        <div id="main-popup">
+            <button id="delay-button" class="tab-button" data-tab="delay-tab">Load this tab later</button>
+            <button id="list-button" class="tab-button" data-tab="list-tab">Show list</button>
+            <div id="list-tab" class="tab" style="display:none">
+                <h3>Tabs saved for later</h3>
+                <ul id="delay-list">
+                    <strong>List is empty...</strong>
+                </ul>
+            </div>
+            <div id="delay-tab" class="tab">
+                <ul id="delay-select">
+                    <li><a class="delay-select-button" href="#" data-type="thisEvening">This Evening</a></li>
+                    <li><a class="delay-select-button" href="#" data-type="tomorrowMorning">Tomorrow Morning</a></li>
+                    <li><a class="delay-select-button" href="#" data-type="tomorrowEvening">Tomorrow Evening</a></li>
+                    <li><a class="delay-select-button" href="#" data-type="weekend">This Weekend</a></li>
+                    <li><a class="delay-select-button" href="#" data-type="nextWeek">Next Week</a></li>
+                    <li><a class="delay-select-button" href="#" data-type="custom">In 3 minutes</a></li>
+                </ul>
+            </div>
+        </div>
+        <script src="../js/jquery-2.0.3.min.js" type="text/javascript"></script>
+        <script src="../js/lodash.min.js" type="text/javascript"></script>
+        <script src="../js/moment.min.js" type="text/javascript"></script>
+        <script src="../js/browser_action.js" type="text/javascript"></script>
+    </body>
+</html>

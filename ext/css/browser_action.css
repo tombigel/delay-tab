@@ -1,0 +1,56 @@
+ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-popup {
+    padding: 10px;
+    min-height: 200px;
+    width: 460px;
+    font-family: Helvetica, Ubuntu, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.delay-select-button {
+    display: block;
+    padding: 5px 10px;
+    margin: 5px 0;
+    background: dodgerblue;
+    border-radius: 6px;
+    color: antiquewhite;
+}
+
+.delay-select-button:hover {
+    background: royalblue;
+    color: white;
+}
+
+.delay-item {
+    border-bottom: 1px solid cornflowerblue;
+    padding: 5px 10px;
+}
+
+.delay-item span {
+    display: inline-block;
+    width: 200px;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.delay-item em {
+    display: inline-block;
+    width: 100px;
+    vertical-align: middle;
+
+}
+
+.delay-item-remove {
+    width: 60px;
+    vertical-align: middle;
+}
+
+.delay-item-open {
+    width: 60px;
+    vertical-align: middle;
+}
