@@ -2,7 +2,7 @@ function DelayTab() {
     this.init();
 }
 
-_.extend(DelayTab.prototype, {
+DelayTab.prototype = {
     init: function () {
         chrome.runtime.onMessage.addListener(this.events.onMessage.bind(this));
         chrome.alarms.onAlarm.addListener(this.events.onAlarm.bind(this));
@@ -196,6 +196,6 @@ _.extend(DelayTab.prototype, {
             return moment(date).add('minutes', 3);
         }
     }
-});
+};
 
 new DelayTab();

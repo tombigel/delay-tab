@@ -2,7 +2,7 @@ function Popup() {
     this.init();
 }
 
-_.extend(Popup.prototype, {
+Popup.prototype = {
     init: function () {
         this.ui.refreshList();
 
@@ -100,6 +100,6 @@ _.extend(Popup.prototype, {
             });
         }
     }
-});
+};
 
 new Popup();
