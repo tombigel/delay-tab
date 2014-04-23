@@ -68,11 +68,11 @@ DelayTab.prototype = {
      * @param {string} uniqueId
      */
     loadTabById: function (uniqueId, callback) {
-        loadTab = this.loadTab.bind(this);
+        var loadTab = this.loadTab.bind(this);
         chrome.storage.local.get(uniqueId, function (items) {
             loadTab(items[uniqueId][0]);
             if(callback){
-                callback;
+                callback();
             }
         });
     },
@@ -198,4 +198,4 @@ DelayTab.prototype = {
     }
 };
 
-new DelayTab();
+var delaytab = new DelayTab();

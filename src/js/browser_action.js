@@ -102,4 +102,4 @@ Popup.prototype = {
     }
 };
 
-new Popup();
+var popup = new Popup();
